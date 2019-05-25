@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directive Vmodel Chekbox</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" v-model="message">
+        <br>
+       {{ message }}
+        <br>
+       <textarea cols="30" rows="10" v-model="textarea">
+
+       </textarea>
+       <br>
+       <p style="white-space: pre-line;">{{ textarea }}</p>
+       <input type="radio" v-model="radiobutton" value="option1">option 1
+       <br>
+       <input type="radio" v-model="radiobutton" value="option2">option 2
+       <br>
+       your choice is {{ radiobutton }}
+       <br>
+       <label for="watching Movie">watching-movie</label>
+       <input type="checkbox" value="watching-movie" v-model="checkbox">
+       <br>
+       <label for="">traveling</label>
+       <input type="checkbox" value="traveling" v-model="checkbox">
+       <br>
+       <label for="">Reading</label>
+       <input type="checkbox" value="reading" v-model="checkbox">
+       my hobbies are: {{ checkbox }}
+       <ul>
+           <li v-for="choice in checkbox ">{{ choice }}</li>
+       </ul>
+   </div>
+
+<script src="vendor/vue.js"></script>
+<script src="js/DirectiveVModelCheckbox.js"></script>
+</body>
+</html> 
+
+
+
+ 
