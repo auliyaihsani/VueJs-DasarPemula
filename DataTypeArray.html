@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Type Array</title>
+</head>
+<body>
+
+    <div id="app">
+        <ul>
+            <li> {{ vehicles[0] }} </li>
+        </ul>
+        <br>
+        <ul>
+            <li v-for="vehicle in  vehicles">
+                {{ vehicle }}
+            </li>
+        </ul>
+        <br>
+        <label for="">add vehicle</label><br>
+        <input type="text" v-model="content">
+        <button @click="addVehicle">Add</button>
+        <br>
+
+        <ul>
+            <li v-for="(vehicle, index) in vehicles">
+                <button @click="removeVehicle(index)">x</button>
+                {{ vehicle }}
+            </li>
+        </ul>
+
+    </div>
+
+<script src="vendor/vue.js"></script>
+<script src="js/DataTypeArray.js"></script>
+</body>
+</html> 
+
+
+
+ 

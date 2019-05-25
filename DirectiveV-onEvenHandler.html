@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directive V-on event Handler</title>
+</head>
+<body>
+
+    <div id="app">
+    <button v-on:click="message = 'the button has been clicked using v-on:click! '">
+        click
+    </button>
+    <button @click="message = 'the button has been clicked using @click!' ">
+        click me
+    </button>
+
+    <button @click="showAlert">
+        show alert
+    </button>
+    <br>
+    {{ message }}
+
+    </div>
+
+<script src="vendor/vue.js"></script>
+<script src="js/DirectiveV-onEvenHandler.js"></script>
+</body>
+</html> 
+
+
+
+ 
